@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <meta content="width=device-width,initial-scale=1" name="viewport" />
+
+  <title>Loja Grendene</title>
+  <link rel="icon" href="./images/favicon.png">
+
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="./styles/multiple-select.min.css" rel="stylesheet">
+  <link href="./styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div>
+      <img src="./images/logo_grendene.png" alt="Logo Grendene" height="25px">
+    </div>
+    <div class="div-social-networks">
+      <p>JÁ SEGUE A GENTE EM NOSSAS REDES SOCIAIS?</p>
+      <a href="https://www.facebook.com/GrendeneOficial" target="_blank" class="logo-social-networks">
+        <img src="./images/fb.png" alt="Logo Facebook" height="30px">
+      </a>
+      <a href="https://www.instagram.com/grendene.oficial" target="_blank" class="logo-social-networks">
+        <img src="./images/ig.png" alt="Logo Instagram" height="30px">
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="div-main-left">
+      <h3>CONHEÇA AS NOSSAS MARCAS</h3>
+
+      <div>
+        <img src="./images/logo_melissa.png" alt="Logo Melissa" class="brand-logo-small">
+        <img src="./images/logo_ipanema.png" alt="Logo Ipanema" height="60px" class="brand-logo-small">
+        <a href="https://www.zaxy.com.br" target="_blank">
+          <img src="./images/logo_zaxy.png" alt="Logo Zaxy" class="brand-logo-small">
+        </a>
+        <img src="./images/logo_rider.png" alt="Logo Rider" class="brand-logo-small">
+      </div>
+      <div>
+        <img src="./images/logo_cartago.png" alt="Logo Cartago" class="brand-logo">
+        <img src="./images/logo_grendha.png" alt="Logo Grendha" class="brand-logo">
+        <img src="./images/logo_kids.png" alt="Logo Grendene Kids" class="brand-logo">
+      </div>
+
+      <div class="div-social-networks-mobile">
+        <div>
+          <h5>JÁ SEGUE A GENTE EM NOSSAS REDES SOCIAIS?</h5>
+        </div>
+        <div>
+          <a href="https://www.facebook.com/GrendeneOficial" target="_blank" class="logo-social-networks">
+            <img src="./images/fb.png" alt="Logo Facebook" height="30px">
+          </a>
+          <a href="https://www.instagram.com/grendene.oficial" target="_blank" class="logo-social-networks">
+            <img src="./images/ig.png" alt="Logo Instagram" height="30px">
+          </a>
+        </div>
+      </div>
+
+      <p style="padding-top: 15px;">
+        EM BREVE NOSSAS LOJAS ONLINE!
+      </p>
+
+      <div id="divSuccess">
+        <h4>
+          CADASTRADO COM SUCESSO!
+        </h4>
+      </div>
+
+      <form id="form" onsubmit="handleSubmit()">
+        <h4>
+          CADASTRE-SE PARA NÃO PERDER
+          <br />
+          NENHUMA NOVIDADE
+        </h4>
+
+        <div class="div-selects">
+          <label class="select">
+            <select id="slcSize" required>
+              <option value="" disabled hidden selected>Pé</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17/18">17/18</option>
+              <option value="19">19</option>
+              <option value="20/21">20/21</option>
+              <option value="22">22</option>
+              <option value="23/24">23/24</option>
+              <option value="25">25</option>
+              <option value="26/27">26/27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+              <option value="32/33">32/33</option>
+              <option value="34">34</option>
+              <option value="35">35</option>
+              <option value="36">36</option>
+              <option value="37">37</option>
+              <option value="38">38</option>
+              <option value="39">39</option>
+              <option value="40">40</option>
+              <option value="41">41</option>
+              <option value="42">42</option>
+              <option value="43/44">43/44</option>
+              <option value="45">45</option>
+            </select>
+          </label>
+
+          <div style="padding-left: 10px;">
+            <select multiple="multiple" id="slcBrands" placeholder="Marcas">
+              <option value="melissa">Melissa</option>
+              <option value="ipanema">Ipanema</option>
+              <option value="zaxy">Zaxy</option>
+              <option value="rider">Rider</option>
+              <option value="cartago">Cartago</option>
+              <option value="grendha">Grendha</option>
+              <option value="kids">Grendene Kids</option>
+            </select>
+          </div>
+        </div>
+
+        <input type="email" id="txtEmail" placeholder="E-mail" required>
+
+        <button type="submit">
+          <i class="fa fa-chevron-right"></i>
+        </button>
+      </form>
+    </div>
+
+    <div class="div-main-right">
+      <h3>
+        CONHEÇA A NOVA
+        <br />
+        LOJA ONLINE ZAXY
+      </h3>
+
+      <div>
+        <a href="https://www.zaxy.com.br" target="_blank">
+          <img src="./images/banner_zaxy.png" alt="Banner loja Zaxy" height="200px">
+        </a>
+      </div>
+
+      <div style="padding: 40px 0;">
+        <a href="https://www.zaxy.com.br" target="_blank" class="link-buttom">
+          VISITAR LOJA
+          <i style="padding-left: 12px;" class="fa fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+  </main>
+
+
+  <footer class="footer-desk">
+    <p class="footer-grendene">
+      Grendene S.A.
+    </p>
+    <p>
+      sac@grendene.com.br
+      | CNPJ: 89.850.341/0012-12
+      | Av. Pedro Grendene, 131 Volta Grande - Farroupilha, RS - CEP 95180-00
+    </p>
+  </footer>
+
+  <footer class="footer-mobile">
+    <div style="display: flex; padding: 10px;">
+      <p class="footer-grendene">
+        Grendene S.A.
+      </p>
+      <p>
+        sac@grendene.com.br | CNPJ: 89.850.341/0012-12
+      </p>
+    </div>
+    <div>
+      <p>
+        Av. Pedro Grendene, 131 Volta Grande - Farroupilha, RS - CEP 95180-00
+      </p>
+    </div>
+  </footer>
+
+  <script src="./scripts/jquery-3.4.1.min.js"></script>
+  <script src="./scripts/multiple-select.min.js"></script>
+  <script src="./scripts/axios.min.js"></script>
+  <script src="./scripts/script.js"></script>
+</body>
+
+</html>

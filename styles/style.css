@@ -1,0 +1,330 @@
+@font-face {
+    font-family: "Radomir Tinkov";
+    src:url("../fonts/Radomir Tinkov - Gilroy-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Radomir Tinkov Bold";
+    src: url("../fonts/Radomir Tinkov - Gilroy-ExtraBold.otf") format("opentype");
+}
+
+html,
+body {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  font-family: "Radomir Tinkov", sans-serif;
+  color: #FFFFFF;
+}
+
+body {
+  background-image: url("../images/bg_desktop.jpg");
+  background-color: #19227d;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+header {
+  border-bottom: 1px solid #FFF;
+  padding: 25px 20px 5px;
+  width: 85vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h3 {
+  font-family: "Radomir Tinkov Bold";
+  letter-spacing: 0.1em;
+  padding-bottom: 20px;
+}
+
+h4 {
+  font-family: "Radomir Tinkov Bold";
+  letter-spacing: 0.1em;
+  color: #FAC901;
+}
+
+.div-social-networks {
+  display: flex;
+  align-items: center;
+}
+
+.logo-social-networks {
+  margin-left: 15px;
+}
+
+footer {
+  display: flex;
+  font-size: 14px;
+  width: 85vw;
+  justify-content: center;
+}
+
+.footer-grendene {
+  font-family: "Radomir Tinkov Bold";
+  margin-right: 10px;
+}
+
+main {
+  display: flex;
+  width: 100%;
+}
+
+.div-main-left {
+  width: 50%;
+  text-align: center;
+}
+
+.div-main-right {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.brand-logo-small {
+  height: 60px;
+}
+
+.brand-logo {
+  height: 45px;
+}
+
+.link-buttom {
+  background-color: #0F41E2;
+  border: 1.5px solid #FFF;
+  border-radius: 10px;
+  color: #FFF;
+  padding: 8px 18px;
+  font-family: "Radomir Tinkov Bold";
+  letter-spacing: 0.1em;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+input[type=email] {
+  font-family: "Radomir Tinkov", sans-serif;
+  border: 1.5px solid #FFF;
+  background-color: #4128C2;
+  border-radius: 10px;
+  color: #FFF;
+  padding: 8px;
+  outline: none;
+  width: 260px;
+  height: 18px;
+  margin-left: 43px;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+:-ms-input-placeholder { /* IE 10-11 */
+  color: rgba(255, 255, 255, 0.6);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* https://stackoverflow.com/questions/30782605/customize-a-select-with-font-awesome */
+.select {
+  border: 1.5px solid #FFF;
+  border-radius: 10px;
+  overflow: hidden; 
+  height: 35px;    
+  width: 70px;
+  position: relative;
+  display: block;
+}
+
+select{       
+  height: 35px;
+  padding: 8px;
+  border: 0;
+  font-size: 14px;       
+  width: 70px;
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #4128C2;
+  outline: none;
+  font-family: "Radomir Tinkov", sans-serif;
+}
+
+select:valid {
+  color: #FFF;
+}
+
+.select:after {
+  content:"\f078";
+  font-family: FontAwesome;
+  padding: 8px 20px 0 0;
+  position: absolute; right: 0; top: 0;
+  background: #4128C2;
+  z-index: 1;
+  text-align: center;
+  width: 10%;
+  height: 100%;      
+  pointer-events: none;
+  box-sizing: border-box;   
+}
+
+select option {
+  background: #FFF;
+  color: #000;
+}
+
+.div-selects {
+  display: flex; 
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.ms-choice {
+  background-color: #4128C2;
+  border: 1.5px solid #FFF;
+  font-size: 14px;       
+  border-radius: 10px;
+  color: #FFF;
+  font-size: 15px;
+  height: 37px;
+  outline: none;
+}
+
+.ms-choice>span.placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Radomir Tinkov", sans-serif;
+  font-size: 14px;  
+  margin-top: 6px;     
+}
+
+.ms-drop {
+  text-align: left;
+}
+
+.ms-choice>span {
+  margin-top: 6px;   
+  font-family: "Radomir Tinkov", sans-serif;
+  font-size: 14px;    
+}
+
+button[type=submit] {
+  outline: none;
+  background-color: #0F41E2;
+  border: 1.5px solid #FFF;
+  border-radius: 50%;
+  color: #FFF;
+  width: 37px;
+  height: 37px;
+  text-align: center;
+}
+
+.ms-choice>div.icon-caret {
+  border-style: none;
+  margin-top: -13px;
+}
+
+.icon-caret:after {
+  content:"\f078";
+  font-family: FontAwesome;
+  position: absolute; 
+  right: 0; 
+  top: 0;
+}
+
+#divSuccess {
+  display: none;
+  padding-top: 30px;
+}
+
+.div-social-networks-mobile {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer-mobile {
+  display: none;
+}
+
+@media (max-device-width: 900px) {
+  body {
+    background-image: url("../images/bg_mobile.jpg");
+  }
+
+  main {
+    display: block;
+    width: 100%;
+  }
+
+  header {
+    border: none;
+    justify-content: center;
+    padding: 40px 0 35px;
+  }
+
+  .div-social-networks {
+    display: none;
+  }
+
+  .div-main-left {
+    width: 100%;
+  }
+  
+  .div-main-right {
+    width: 100%;
+  }
+
+  .brand-logo-small {
+    height: 45px;
+  }
+
+  .brand-logo {
+    height: 30px;
+  }
+
+  .div-social-networks-mobile {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #FFF;
+    width: 85vw;
+    margin: 15px auto 35px;
+  }
+
+  footer {
+    font-size: 9px;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+  }
+
+  footer>div {
+    height: 10px;
+  }
+
+  h3 {
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
+  .footer-desk {
+    display: none;
+  }
+
+  .footer-mobile {
+    display: block;
+  }
+}
